@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "361236664221",
+    "firebase_url": "https://finalproject-1bfa6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "finalproject-1bfa6",
+    "storage_bucket": "finalproject-1bfa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361236664221:android:7bb2009d02aa3637966974",
+        "android_client_info": {
+          "package_name": "com.example.medicinelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361236664221-tm45c2pabjofucnshd663tp4jae5jhvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg-_JHC7N0QFQmB6yWT_qTNHlyH_OH0v8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361236664221-tm45c2pabjofucnshd663tp4jae5jhvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
