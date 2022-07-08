@@ -88,17 +88,27 @@ class MedList : AppCompatActivity() {
 
     fun onItemLongClickListener()
     {
+        val uName = intent.getStringExtra("uName").toString()
+        
         lstView.setOnItemLongClickListener { parent, view, position, id ->
-            val alert = AlertDialog.Builder(this)
-            alert.setTitle("Delete Record")
-            alert.setMessage("Are you sure you want to delete the record?")
-            alert.setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, which ->
-                refMed.child(infoArray[position].id).removeValue()
-            })
-            alert.setNegativeButton("No",DialogInterface.OnClickListener { dialog, which ->
-                dialog.dismiss()
-            })
-            alert.create().show()
+            if(infoArray[position].pName == uName)
+            {
+                val alert = AlertDialog.Builder(this)
+                alert.setTitle("Delete Record")
+                alert.setMessage("Are you sure you want to delete the record?")
+                alert.setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, which ->
+                    refMed.child(infoArray[position].id).removeValue()
+                })
+                alert.setNegativeButton("No",DialogInterface.OnClickListener { dialog, which ->
+                    dialog.dismiss()
+                })
+                alert.create().show()
+            }
+            else
+            {
+                Toast.makeText(this,"Access Denied",Toast.LENGTH_SHORT).show()
+            }
+            
             true
         }
     }
