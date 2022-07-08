@@ -10,8 +10,6 @@ class MainScreen : AppCompatActivity() {
     lateinit var edtV1_uName: EditText
     lateinit var edtV1_uAge: EditText
     lateinit var btn1_Register: Button
-    lateinit var rbMale: RadioButton
-    lateinit var rbFemale: RadioButton
     lateinit var radioGroup: RadioGroup
 
     //Data Variables for Widgets
@@ -26,8 +24,6 @@ class MainScreen : AppCompatActivity() {
         edtV1_uName = findViewById(R.id.edtV1_uName)
         edtV1_uAge = findViewById(R.id.edtV1_uAge)
         btn1_Register = findViewById(R.id.btn1_Register)
-        rbMale = findViewById(R.id.rbMale)
-        rbFemale = findViewById(R.id.rbFemale)
         radioGroup = findViewById(R.id.radioGroup)
 
         radioButtonWorking()
